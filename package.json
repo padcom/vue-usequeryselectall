@@ -1,0 +1,50 @@
+{
+  "name": "@padcom/vue-usequeryselectall",
+  "version": "0.0.1",
+  "description": "Vue.js composable that watches a tree of DOM elements and keeps a list of querySelectAll elements up to date",
+  "license": "Apache-2.0",
+  "main": "./dist/vue-usequeryselectall.umd.js",
+  "module": "./dist/vue-usequeryselectall.mjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/vue-usequeryselectall.umd.js",
+      "import": "./dist/vue-usequeryselectall.mjs",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite build -w",
+    "build": "vite build",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/padcom/vue-usequeryselectall"
+  },
+  "bugs": {
+    "url": "https://github.com/padcom/vue-usequeryselectall/issues"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/padcom"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@padcom/eslint-config-typescript": "^0.6.0",
+    "typescript": "~5.0.4",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "eslintConfig": {
+    "extends": "@padcom/eslint-config-typescript"
+  }
+}
