@@ -1,6 +1,6 @@
 {
   "name": "@padcom/vue-usequeryselectall",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Vue.js composable that watches a tree of DOM elements and keeps a list of querySelectAll elements up to date",
   "license": "Apache-2.0",
   "main": "./dist/vue-usequeryselectall.umd.js",
