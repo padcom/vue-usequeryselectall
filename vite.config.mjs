@@ -13,5 +13,8 @@ export default defineConfig({
       name: 'vue-usequeryselectall',
       formats: ['es', 'umd'],
     },
+    rollupOptions: {
+      external: 'vue',
+    },
   },
 })
